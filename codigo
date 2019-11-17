@@ -1,0 +1,21 @@
+/**
+Objetivo 
+	Calcular o FGTS
+Descrição
+	O cálculo do FGTS segue por base o salário bruto e tempo de trabalho do colaborador, onde são depositados mensalmente 8% do valor bruto em uma conta aberta da Caixa Econômica Federal, pelo empregador, em nome do empregado.
+**/
+
+#include <stdio.h>
+
+int main(void) {
+	float salario, fgts;
+
+	printf("Informe o salário: ");
+	scanf("%f", &salario);
+
+	fgts = salario * .08;
+
+	printf("Para um salário de %.2f o FGTS é %.2f", salario, fgts);
+
+  	return 0;
+}
